@@ -2,7 +2,7 @@
   "name": "pokemood",
   "private": false,
   "version": "0.0.0",
-  "homepage": "http://iroshiki.github.io/pokemood",
+  "homepage": "https://iroshiki.github.io/pokemood",
   "type": "module",
   "scripts": {
     "dev": "vite",
