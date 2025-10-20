@@ -36,7 +36,7 @@ const Index = ({language, setLanguage}) =>{
         <div className="header full-width" id="header">
             <div className="header-content full-height">
                 <div className="header-upper full-width" id="header-upper">
-                    <img src="src/assets/logo.png" alt="" className="header-logo" id="header-logo"/>
+                    <img src="/public/img/logo.png" alt="" className="header-logo" id="header-logo"/>
                     <button className="language-tag" id="top-langauge-tag" onClick={()=>setLanguage("fi")}>Suomi</button>
                 </div>
                 <div className="nav full-width" id="nav">
@@ -62,7 +62,7 @@ const Index = ({language, setLanguage}) =>{
         <div className="top-banner-container justify-center full-width">
             <div className="top-banner-content full-height full-width">
                 <div className="intro-img-container justify-center full-width">
-                    <img src="src/assets/banner_with_logo_2.png" alt="" className="intro-img full-width"/>
+                    <img src="/public/img/banner_with_logo_2.png" alt="" className="intro-img full-width"/>
                 </div>
             </div>
         </div>
@@ -76,7 +76,7 @@ const Index = ({language, setLanguage}) =>{
         <div className="info-container full-width justify-center" id="about">
             <div className="info">
                 <div className="info-image-container">
-                    <img src="src/assets/dishes-01.jpg" alt="" className="full-width"/>
+                    <img src="/public/img/dishes-01.jpg" alt="" className="full-width"/>
                 </div>
                 <div className="info-content-container full-width">
                     <div className="info-title"><p className="no_deco">About Pokemood</p><p className="no_deco">—</p></div>
@@ -92,12 +92,12 @@ const Index = ({language, setLanguage}) =>{
                     <p>Originating in Hawaii, poke bowls are a combination of fresh ingredients. The bowl is often composed of your choice of protein, such as fish (raw or cooked), fried chicken, shrimp, or tofu, as well as vegetables and fruit. Various sauces top off the dish, which is served with rice or salad.</p>
                 </div>
                 <div className="info-image-container">
-                    <img src="src/assets/dishes-02.jpg" alt="" className="full-width"/>
+                    <img src="/public/img/dishes-02.jpg" alt="" className="full-width"/>
                 </div>
             </div>
             <div className="info">
                 <div className="info-image-container">
-                    <img src="src/assets/dishes-01.jpg" alt="" className="full-width"/>
+                    <img src="/public/img/dishes-01.jpg" alt="" className="full-width"/>
                 </div>
                 <div className="info-content-container full-width">
                     <div className="info-title"><p className="no_deco">Why Pokemood</p><p className="no_deco">—</p></div>
@@ -136,7 +136,7 @@ const Index = ({language, setLanguage}) =>{
                     <div className="restaurant-content">
                         <div className="restaurant-container-left">
                             <div className="restaurant-image full-width">
-                                <img src="src/assets/kamppi_rest.jpg" alt="" className="full-width restaurant-image-img"/>
+                                <img src="/public/img/kamppi_rest.jpg" alt="" className="full-width restaurant-image-img"/>
                             </div>
                         </div>
                         <div className="restaurant-container-right">
@@ -154,7 +154,7 @@ const Index = ({language, setLanguage}) =>{
                     <div className="restaurant-content">
                         <div className="restaurant-container-left">
                             <div className="restaurant-image full-width">
-                                <img src="src/assets/kluuvi_rest.jpg" alt="" className="full-width restaurant-image-img"/>
+                                <img src="/public/img/kluuvi_rest.jpg" alt="" className="full-width restaurant-image-img"/>
                             </div>
                         </div>
                         <div className="restaurant-container-right">
