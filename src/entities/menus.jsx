@@ -1,7 +1,11 @@
+const getImageUrl = (name) => {
+  return new URL(`/src/assets/img/${name}`, import.meta.url).href
+}
+
 export const kluuvi_menu = {
-    menu : [`${import.meta.env.BASE_URL}src/assets/img/kluuvi_lunch_menu.jpg`,`${import.meta.env.BASE_URL}src/assets/img/kluuvi_menu.jpg`]
+    menu : [getImageUrl('kluuvi_lunch_menu.jpg'),getImageUrl('kluuvi_menu.jpg')]
 }
 
 export const kamppi_menu = {
-    menu : [`${import.meta.env.BASE_URL}src/assets/img/kamppi_menu.jpg`]
+    menu : [getImageUrl('kamppi_menu.jpg')]
 }
