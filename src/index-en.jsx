@@ -7,7 +7,7 @@ const getImageUrl = (name) => {
   return new URL(`/src/assets/img/${name}`, import.meta.url).href
 }
 
-const Index = ({language, setLanguage}) =>{
+const IndexEN = ({language, setLanguage}) =>{
 
     const scrollToSession = (id) =>{
         const element = document.getElementById(id)
@@ -50,7 +50,7 @@ const Index = ({language, setLanguage}) =>{
                         <img src={getImageUrl('logo.png')} alt="" className="nav-logo box" id="nav-logo"/>
                         <button onClick={()=>scrollToSession("about")} className="nav-tag">About Poke Mood</button>
                         <button onClick={()=>scrollToSession("menu")} className="nav-tag">Menu</button>
-                        <button onClick={()=>scrollToSession("contact")} className="nav-tag">Contact</button>
+                        <button onClick={()=>scrollToSession("visit")} className="nav-tag">Contact</button>
                         <button onClick={()=>scrollToSession("visit")} className="nav-button-tag">Visit Our Restaurant</button>
                         <button onClick={()=>setLanguage("fi")} className="language-tag box" id="nav-langauge-tag">Suomi</button>
                     </div>
@@ -148,13 +148,14 @@ const Index = ({language, setLanguage}) =>{
                         <div className="restaurant-container-right">
                             <div className="restaurant-title">Poke Mood Kamppi</div>
                             <div className="restaurant-location">Eerikinkatu 12, 00100 Helsinki</div>
-                            <div className="retaurant-description"></div>
+                            <div className="restaurant-description">+358 0449259529</div>
                             <div className="retaurant-open-hour">
-                                <p>Open on:</p>
-                                <p>Mon-Fri: 11:00 - 19:00</p>
-                                <p>Sat-Sun: 12:00 - 19:00</p>
+                                <p className="no_deco">Open on:</p>
+                                <p>Mon-Fri: 10:30 - 21:00</p>
+                                <p>Sat: 12:00 - 21:00</p>
+                                <p>Sun: 12:00 - 20:00</p>
                             </div>
-                            <a href="https://maps.app.goo.gl/AqeRfYVG1p5Bw9eVA" className="map-link">Check on Google Map</a>
+                            <a href="https://maps.app.goo.gl/37j1efhd7AxP9zbM6" className="map-link">Check on Google Map</a>
                         </div>
                     </div>
                     <div className="restaurant-content">
@@ -166,13 +167,13 @@ const Index = ({language, setLanguage}) =>{
                         <div className="restaurant-container-right">
                             <div className="restaurant-title">Poke Mood Kluuvi</div>
                             <div className="restaurant-location">Eerikinkatu 12, 00100 Helsinki</div>
-                            <div className="retaurant-description"></div>
+                            <div className="restaurant-description">+358 0442459754</div>
                             <div className="retaurant-open-hour">
-                                <p>Open on:</p>
-                                <p>Mon-Fri: 11:00 - 19:00</p>
+                                <p className="no_deco">Open on:</p>
+                                <p>Mon-Fri: 10:30 - 19:00</p>
                                 <p>Sat-Sun: 12:00 - 19:00</p>
                             </div>
-                            <a href="https://maps.app.goo.gl/AqeRfYVG1p5Bw9eVA" className="map-link">Check on Google Map</a>
+                            <a href="https://maps.app.goo.gl/fqL582PsNvSdrSwr9" className="map-link">Check on Google Map</a>
                         </div>
                     </div>
                 </div>
@@ -193,4 +194,4 @@ const Index = ({language, setLanguage}) =>{
     )
 }
 
-export default Index
+export default IndexEN
