@@ -331,3 +331,6 @@ a{
 .footer-logo{
     height: 80px;
 }
+.cover{
+    object-fit: cover;
+}

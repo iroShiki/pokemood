@@ -1,6 +1,9 @@
 import {kluuvi_menu, kamppi_menu} from "./entities/menus"
 import Menu from "./components/menu"
 import { useState } from 'react'
+import controlTopNav from './services/control-top-nav'
+
+import logoImg from '/src/assets/img/logo.png'
 
 const Index = ({language, setLanguage}) =>{
 
@@ -12,6 +15,7 @@ const Index = ({language, setLanguage}) =>{
         })
     }
 
+    controlTopNav()
 
     const [currentMenu, setCurrentMenu] = useState(kluuvi_menu)
 
@@ -36,7 +40,7 @@ const Index = ({language, setLanguage}) =>{
         <div className="header full-width" id="header">
             <div className="header-content full-height">
                 <div className="header-upper full-width" id="header-upper">
-                    <img src={`${import.meta.env.BASE_URL}src/assets/img/logo.png`} alt="" className="header-logo" id="header-logo"/>
+                    <img src={logoImg} alt="" className="header-logo" id="header-logo"/>
                     <button className="language-tag" id="top-langauge-tag" onClick={()=>setLanguage("fi")}>Suomi</button>
                 </div>
                 <div className="nav full-width" id="nav">
@@ -54,9 +58,9 @@ const Index = ({language, setLanguage}) =>{
         <div className="mobile-nav-container full-width">
                 <div className="mobile-nav-contant full-width full-height">
                     <button onClick={()=>scrollToSession("about")} className="mobile-nav-tag" id="mobile-nav-about">About</button>
-                    <a href="#menu" className="mobile-nav-tag" id="mobile-nav-menu">Menu</a>
-                    <a href="#visit" className="mobile-nav-tag" id="mobile-nav-visit">Visit Our Restaurant</a>
-                    <a href="../fi/index.html" className="mobile-nav-tag" id="mobile-nav-language">Suomi</a>
+                    <button onClick={()=>scrollToSession("menu")} className="mobile-nav-tag" id="mobile-nav-menu">Menu</button>
+                    <button onClick={()=>scrollToSession("visit")} className="mobile-nav-tag" id="mobile-nav-visit">Visit Our Restaurant</button>
+                    <button onClick={()=>setLanguage("fi")} className="mobile-nav-tag" id="mobile-nav-language">Suomi</button>
                 </div>
         </div>
         <div className="top-banner-container justify-center full-width">
@@ -97,7 +101,7 @@ const Index = ({language, setLanguage}) =>{
             </div>
             <div className="info">
                 <div className="info-image-container">
-                    <img src={`${import.meta.env.BASE_URL}src/assets/img/dishes-03.jpg`} alt="" className="full-height"/>
+                    <img src={`${import.meta.env.BASE_URL}src/assets/img/dishes-03.jpg`} alt="" className="full-width full-height cover"/>
                 </div>
                 <div className="info-content-container full-width">
                     <div className="info-title"><p className="no_deco">Why Pokemood</p><p className="no_deco">—</p></div>

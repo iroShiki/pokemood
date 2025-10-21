@@ -1,5 +1,6 @@
 import { useState } from 'react'
 import './index.css'
+import './index-mobile.css'
 import Index from './index'
 
 function App() {
