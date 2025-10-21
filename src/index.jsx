@@ -36,12 +36,12 @@ const Index = ({language, setLanguage}) =>{
         <div className="header full-width" id="header">
             <div className="header-content full-height">
                 <div className="header-upper full-width" id="header-upper">
-                    <img src="/img/logo.png" alt="" className="header-logo" id="header-logo"/>
+                    <img src={`${import.meta.env.BASE_URL}src/assets/img/logo.png`} alt="" className="header-logo" id="header-logo"/>
                     <button className="language-tag" id="top-langauge-tag" onClick={()=>setLanguage("fi")}>Suomi</button>
                 </div>
                 <div className="nav full-width" id="nav">
                     <div className="nav-tag-list">
-                        <img src="../img/gyozaking_logo.png" alt="" className="nav-logo box" id="nav-logo"/>
+                        <img src={`${import.meta.env.BASE_URL}src/assets/img/logo.png`} alt="" className="nav-logo box" id="nav-logo"/>
                         <button onClick={()=>scrollToSession("about")} className="nav-tag">About Poke Mood</button>
                         <button onClick={()=>scrollToSession("menu")} className="nav-tag">Menu</button>
                         <button onClick={()=>scrollToSession("contact")} className="nav-tag">Contact</button>
@@ -62,7 +62,7 @@ const Index = ({language, setLanguage}) =>{
         <div className="top-banner-container justify-center full-width">
             <div className="top-banner-content full-height full-width">
                 <div className="intro-img-container justify-center full-width">
-                    <img src="/img/banner_with_logo_2.png" alt="" className="intro-img full-width"/>
+                    <img src={`${import.meta.env.BASE_URL}src/assets/img/banner_with_logo_2.png`} alt="" className="intro-img full-width"/>
                 </div>
             </div>
         </div>
@@ -76,7 +76,7 @@ const Index = ({language, setLanguage}) =>{
         <div className="info-container full-width justify-center" id="about">
             <div className="info">
                 <div className="info-image-container">
-                    <img src="/img/dishes-01.jpg" alt="" className="full-width"/>
+                    <img src={`${import.meta.env.BASE_URL}src/assets/img/dishes-01.jpg`} alt="" className="full-width"/>
                 </div>
                 <div className="info-content-container full-width">
                     <div className="info-title"><p className="no_deco">About Pokemood</p><p className="no_deco">—</p></div>
@@ -92,12 +92,12 @@ const Index = ({language, setLanguage}) =>{
                     <p>Originating in Hawaii, poke bowls are a combination of fresh ingredients. The bowl is often composed of your choice of protein, such as fish (raw or cooked), fried chicken, shrimp, or tofu, as well as vegetables and fruit. Various sauces top off the dish, which is served with rice or salad.</p>
                 </div>
                 <div className="info-image-container">
-                    <img src="/img/dishes-02.jpg" alt="" className="full-width"/>
+                    <img src={`${import.meta.env.BASE_URL}src/assets/img/dishes-02.jpg`} alt="" className="full-width"/>
                 </div>
             </div>
             <div className="info">
                 <div className="info-image-container">
-                    <img src="/img/dishes-01.jpg" alt="" className="full-width"/>
+                    <img src={`${import.meta.env.BASE_URL}src/assets/img/dishes-03.jpg`} alt="" className="full-height"/>
                 </div>
                 <div className="info-content-container full-width">
                     <div className="info-title"><p className="no_deco">Why Pokemood</p><p className="no_deco">—</p></div>
@@ -136,7 +136,7 @@ const Index = ({language, setLanguage}) =>{
                     <div className="restaurant-content">
                         <div className="restaurant-container-left">
                             <div className="restaurant-image full-width">
-                                <img src="/img/kamppi_rest.jpg" alt="" className="full-width restaurant-image-img"/>
+                                <img src={`${import.meta.env.BASE_URL}src/assets/img/kamppi_rest.jpg`} alt="" className="full-width restaurant-image-img"/>
                             </div>
                         </div>
                         <div className="restaurant-container-right">
@@ -154,7 +154,7 @@ const Index = ({language, setLanguage}) =>{
                     <div className="restaurant-content">
                         <div className="restaurant-container-left">
                             <div className="restaurant-image full-width">
-                                <img src="/img/kluuvi_rest.jpg" alt="" className="full-width restaurant-image-img"/>
+                                <img src={`${import.meta.env.BASE_URL}src/assets/img/kluuvi_rest.jpg`} alt="" className="full-width restaurant-image-img"/>
                             </div>
                         </div>
                         <div className="restaurant-container-right">
@@ -178,7 +178,7 @@ const Index = ({language, setLanguage}) =>{
                     <p>Copyright Poke Mood © 2025 | Website Developed by <a href="https://www.linkedin.com/in/zongru-li-2b8726325/">Zongru Li</a></p>
                 </div>
                 <div className="footer-right">
-                    <img src="../img/gyozaking_logo.png" className="full-height" alt=""/>
+                    <img src={`${import.meta.env.BASE_URL}src/assets/img/logo.png`} className="footer-logo" alt=""/>
                 </div>
             </div>
         </div>
