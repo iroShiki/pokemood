@@ -176,6 +176,24 @@ const IndexEN = ({language, setLanguage}) =>{
                             <a href="https://maps.app.goo.gl/fqL582PsNvSdrSwr9" className="map-link">Check on Google Map</a>
                         </div>
                     </div>
+                    <div className="restaurant-content">
+                        <div className="restaurant-container-left">
+                            <div className="restaurant-image full-width">
+                                <img src={getImageUrl('arabia_rest.jpg')} alt="" className="full-width restaurant-image-img"/>
+                            </div>
+                        </div>
+                        <div className="restaurant-container-right">
+                            <div className="restaurant-title">Poke Mood Arabia</div>
+                            <div className="restaurant-location">Hämeentie 111, 00560 Helsinki</div>
+                            <div className="restaurant-description">+358 041 3156138</div>
+                            <div className="retaurant-open-hour">
+                                <p className="no_deco">Open on:</p>
+                                <p>Mon-Fri: 10:30 - 19:00</p>
+                                <p>Sat-Sun: 12:00 - 18:00</p>
+                            </div>
+                            <a href="https://share.google/Gb97uqTUDw5vkz2rm" className="map-link">Check on Google Map</a>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
